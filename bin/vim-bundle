@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require 'vim_bundle'
+
+VimBundle::CLI.execute
+
+# vim: syntax=ruby
