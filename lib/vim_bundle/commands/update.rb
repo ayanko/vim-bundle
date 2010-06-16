@@ -15,13 +15,14 @@ module VimBundle
     protected
 
     def erase_bundles(bundles)
-      puts "Erasing all (#{bundles.size}) bundles in #{VimBundle.dir} ..."
+      puts "Erasing all bundles in #{VimBundle.dir} ..."
 
       FileUtils.rm_rf(VimBundle.dir)
       FileUtils.mkdir_p(VimBundle.dir)
     end
 
     def install_bundle(bundle)
+      complete_bundle_options(bundle)
       validate_bundle(bundle)
 
       puts "Updating bundle #{bundle['dir']} ..."
@@ -59,6 +60,13 @@ module VimBundle
 
       FileUtils.mkdir_p(File.dirname(filepath))
       File.open(filepath, 'w') { |f| f << Net::HTTP.get(URI.parse(bundle['url'])) }
+    end
+
+    def complete_bundle_options(bundle)
+      if bundle['url'] =~ /^git:\/\//
+        bundle['type'] ||= 'git'
+        bundle['dir'] ||= File.basename(bundle['url'], '.git')
+      end
     end
 
     def validate_bundle(bundle)
