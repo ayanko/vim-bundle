@@ -1,0 +1,51 @@
+--- 
+bundles: 
+
+- dir: IndentAnything
+  url: http://www.vim.org/scripts/download_script.php?src_id=10228
+  type: tgz
+
+- dir: JavascriptIndent
+  subdir: indent
+  type: vim
+  url: http://www.vim.org/scripts/download_script.php?src_id=11838
+
+- dir: BlockComment
+  type: vim
+  subdir: plugin
+  url: http://www.vim.org/scripts/download_script.php?src_id=1387
+
+- dir: nginx
+  type: vim
+  subdir: syntax
+  url: http://www.vim.org/scripts/download_script.php?src_id=12990
+
+- dir: haproxy
+  type: vim
+  subdir: syntax
+  url: http://www.vim.org/scripts/download_script.php?src_id=6924
+
+- dir: jquery
+  type: vim
+  subdir: syntax
+  url: http://www.vim.org/scripts/download_script.php?src_id=12276
+
+- url: git://github.com/mattn/gist-vim.git
+- url: git://github.com/astashov/vim-ruby-debugger.git
+- url: git://github.com/msanders/snipmate.vim.git
+- url: git://github.com/scrooloose/nerdtree.git
+- url: git://github.com/timcharper/textile.vim.git
+- url: git://github.com/tpope/vim-cucumber.git
+- url: git://github.com/tpope/vim-fugitive.git
+- url: git://github.com/tpope/vim-git.git
+- url: git://github.com/tpope/vim-haml.git
+- url: git://github.com/tpope/vim-markdown.git
+- url: git://github.com/tpope/vim-rails.git
+- url: git://github.com/tpope/vim-repeat.git
+- url: git://github.com/tpope/vim-surround.git
+- url: git://github.com/tpope/vim-vividchalk.git
+- url: git://github.com/tsaleh/vim-align.git
+- url: git://github.com/tsaleh/vim-shoulda.git
+- url: git://github.com/tsaleh/vim-supertab.git
+- url: git://github.com/tsaleh/vim-tcomment.git
+- url: git://github.com/vim-ruby/vim-ruby.git

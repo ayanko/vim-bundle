@@ -5,7 +5,7 @@ module VimBundle
 REQUIRED SYSTEM TOOLS:
     git, curl, unzip, tar, gz
 USAGE: #{$0} [command]
-    init:   install pathogen plugin
+    init:   install bundle plugin (pathogen)
     sample: show sample config file
     update: update all bundles
 HELP
