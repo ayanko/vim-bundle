@@ -1,0 +1,28 @@
+= Description =
+
+VIM bundle management
+
+= Requirements =
+
+ * System utils: git curl tar gzip unzip
+
+= Usage =
+
+* Install sample config:
+ 
+  $vim-bundle sample > vim/bundle.yml
+
+* Edit config .vim/bundle.yml
+
+* Init bundle:
+  $ vim-bundle init
+
+* Update bundle:
+  $ vim-bundle update
+
+
+= References =
+
+ * http://www.vim.org/scripts/script.php?script_id=2332
+ * http://tammersaleh.com/posts/the-modern-vim-config-with-pathogen
+ * http://github.com/hariton/pathogenized
